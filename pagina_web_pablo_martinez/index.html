@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Martinez</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Enlaces a fuentes de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Pablo Martinez</h1>
+        <p>Desarrollador de Aplicaciones Multiplataforma</p>
+        <a href="./experiencia.html" class="button">Proyectos</a>
+        <a href="./estudios.html" class="button">Estudios</a>
+        <a href="CV Pablo Martínez Bienvenido.pdf" target="_blank" class="button">CV PDF</a>
+    </header>
+
+    <!-- Contenido centrado -->
+    <div class="container">
+        <img id="myImage" src="./profile.jpg" alt="Imagen de Pablo Martinez">
+        <div id="carta" class="carta" onclick="funcion()">Clic para ver carta de presentación</div>
+        <div class="text-container hidden">
+            <a href="./index.html" class="button">Volver</a>
+            <h3>¡Hola! Soy Pablo Martínez, desarrollador en formación en Alicante y en búsqueda activa de empleo como desarrollador de software.</h3> 
+            <h3>Estoy finalizando mis estudios de Desarrollo de Aplicaciones Multiplataforma (DAM) y cuento con experiencia en proyectos personales de desarrollo móvil, backend y frontend.</h3>
+            <h3>Mis áreas de especialidad incluyen el desarrollo en Android con Kotlin, aplicaciones multiplataforma con Flutter, y manejo de bases de datos PostgreSQL y MySQL.</h3>
+            <h3>Me considero una persona adaptable y apasionada por la informática, con un enfoque en la solución eficiente de problemas y la mejora continua.</h3>
+            <h2>Habilidades y Conocimientos</h2>
+            <h3>C#, Java, Kotlin, Flutter, Dart, PostgreSQL, MySQL, XML, HTML, CSS, Odoo</h3>
+            
+        </div>
+    </div>
+   
+    <!-- Iconos de contacto -->
+    <div class="contact-icons">
+        <a href="mailto:p.bienve01@gmail.com" target="_blank"><i class="fas fa-envelope"></i> p.bienve01@gmail.com</a>
+        <a href="tel:+34629725185" target="_blank"><i class="fas fa-phone"></i> +34 629 725 185</a>
+        <a href="https://www.linkedin.com/in/tu_perfil_de_linkedin" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+    <script>
+        document.getElementById("myImage").addEventListener("click", function() {
+            var image = document.getElementById("myImage");
+            var carta = document.getElementById("carta");
+            var textContainer = document.querySelector(".text-container");
+            image.style.display = "none"; 
+            carta.style.display = "none"; 
+            textContainer.classList.remove("hidden"); 
+        });
+
+        function funcion() {
+            var image = document.getElementById("myImage");
+            var carta = document.getElementById("carta");
+            var textContainer = document.querySelector(".text-container");
+            image.style.display = "block"; 
+            carta.style.display = "none"; 
+            textContainer.classList.remove("hidden"); 
+        }
+    </script>
+</body>
+</html>

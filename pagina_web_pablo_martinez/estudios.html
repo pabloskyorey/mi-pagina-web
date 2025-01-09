@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Estudios</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #1e1e2f;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .estudios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+            background-color: #29293d;
+            border: 30px solid #4a4a8c;
+            border-radius: 8px;
+            width: 70%;
+            max-width: 400px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e94560;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #d7374d;
+        }
+
+        .contenedor-estudios {
+            margin-top: 50px;
+            width: 100%;
+        }
+
+        .estudio {
+            background-color: #29293d;
+            border: 5px solid #4a4a8c;
+            border-radius: 8px;
+            padding: 5px;
+            margin-bottom: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .estudio ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .estudio li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="estudios">
+        <a href="./index.html" class="button">Volver</a>
+        <div class="contenedor-estudios">
+            <div class="estudio">
+                <h2>Bachillerato en Ciencias Sociales</h2>
+            </div>
+            <div class="estudio">
+                <h2>DAM (Desarrollo de aplicaciones multiplataforma)
